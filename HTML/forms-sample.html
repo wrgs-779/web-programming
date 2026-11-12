@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Sample</title>
+</head>
+<body>
+    <h1>Form Sample</h1>
+    <form action="https://www.wtc-web.com/form-handler.php" method="post"></form>
+        <label for="">First Name:</label>
+        <br>
+        <input type="text" name="firstname">
+        <br>
+        <label for="">Favorite Food</label>
+        <br>
+        <select name="favoritefood" id="">
+            <option value="1">PIZZA</option>
+            <option value="2">Spaghetti</option>
+        </select>
+        <br>
+        <label for="">Favorite Color</label>
+        <br>
+        <input type="radio" value="red" name="color">
+        <label for="">Red</label>
+        <input type="radio" value="blue" name="color">
+        <label for="">Blue</label>
+        <input type="radio" value="green" name="color">
+        <label for="">Green</label>
+        <br>
+        <label for="">Agree to terms of service</label>
+        <input type="checkbox" name="agree">
+        <br>
+        <label for="">Your Courses</label>
+        <br>
+        <input type="checkbox" value="web 1" name="courses[]">
+        <label for="">Web 1</label>
+        <input type="checkbox" value="cisco 1" name="courses[]">
+        <label for="">Cisco 1</label>
+
+</body>
+</html>
