@@ -46,7 +46,7 @@
       <pre>
 LABEL            HTML Form Control
 ----------------------------------------------------------------------------------------------------------------------
-First Name:      Create a text input that has a <b>name</b> attribute of 'firstName'.
+
 
 Favorite Color:  Create a select box that has a <b>name</b> attribute of 'color'.
                  The select box should contain the following options:
@@ -68,15 +68,50 @@ Places Visited:  Create 3 checkboxes with a label to the right of each one (put 
                  - Europe (give it a <b>name</b> attribute of 'visited', and a <b>value</b> attribute of 'Europe').
                  - Africa (give it a <b>name</b> attribute of 'visited', and a <b>value</b> attribute of 'Africa').
                  - Asia (give it a <b>name</b> attribute of 'visited', and a <b>value</b> attribute of 'Asia').
+<br>
 
 Favorite Quote:  Create a textarea that has a <b>name</b> attribute of 'quote'.       
-
+        
 Submit           Create a submit button (an input tag with a <b>type</b> attribute of 'submit' and a <b>value</b> of 'Submit').
-                 
+    </form>         
        </pre>
        <div class="answer">
           <form id="frmSurvey" action="https://www.webcoder.club/form-handler" method="POST">
-            Replace this sentence with your HTML code for the form.         
+            <label for="">First Name:</label>
+            <br>
+            <input type="text" name="firstname">
+            <br>
+            <label for="">Favorite Food</label>
+            <br>
+            <select name="favoritefood" id="">
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            </select>
+            <br>
+            <label for="">Favorite Meal</label>
+            <br>
+            <input type="radio" value="breakfast" name="meal">
+            <label for="">Breakfast</label>
+            <input type="radio" value="lunch" name="meal">
+            <label for="">Lunch</label>
+            <input type="radio" value="dinner" name="meal">
+            <label for="">Dinner</label>
+            <br> 
+            <label for="">Places Visited</label>
+            <br>
+            <input type="checkbox" value="europe" name="visited[]">
+            <label for="">Europe</label>
+            <input type="checkbox" value="africa" name="visited[]">
+            <label for="">Africa</label>
+            <input type="checkbox" value="asia" name="visited[]">
+            <label for="">Asia</label>    
+            <br>
+            <label>Favorite Quote</label>
+            <textarea name="quote"></textarea>
+            <br>
+            <input type="submit" value="Submit">
           </form>
        </div>
        <footer>
