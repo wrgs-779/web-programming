@@ -5,13 +5,43 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>If Statement</title>
         <script>
-            if(5 > 4){
+            
+            // If Statements
+            let input = prompt("Enter a number between 1 and 10");
+            
+            if(5 < 4){
                 console.log("Yes, very true!!")
             }
 
             let doneWithHomework = true;
             if(doneWithHomework){
                 console.log("congratulations");
+            }
+            
+            //If/Else Statements
+            if(input > 5){
+                console.log("True")
+            }else{
+                console.log("False")
+            }
+
+            // Ladder if-statements
+            input = prompt("Enter a color");
+            if(input == "red"){
+                console.log("roses");
+            }else if(input == "blue"){
+                console.log("sky");
+            }else if(input == "green"){
+                console.log("grass");
+            }else{
+                console.log("unknown color");
+            }
+
+            input = prompt("Enter your age");
+            if(input < 10){
+                console.log("less than 10");
+            }else if(input < 20){
+                console.log("less than 20");
             }
 
 

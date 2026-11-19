@@ -42,6 +42,42 @@
             // which function returns the entry?
             const name = prompt("Enter your name");
             alert("Hello " + name + "")
+            
+            // built in function
+             //alert("foo")
+             //console.log("foo")
+
+            function calculateTotalPrice(salesPrice){
+                const totalPrice = salesPrice * 1.07;
+                alert(totalPrice);
+            }
+
+            calculateTotalPrice(100);
+            calculateTotalPrice(200);
+
+            function getFullName(firstName, lastName){
+                const fullName = firstName + " " + lastName;
+                console.log("Hello " + fullName);
+            }
+
+            // debugger;
+            getFullName("Michael", "Jordan");
+            getFullName("Eveel", "Kineval");
+
+            // Return values
+            function convertInchesToFeet(inches){
+                const feet = inches/12;
+                return feet;
+            }
+
+            let total = convertInchesToFeet(144);
+            console.log(total);
+
+            alert("hello");
+            let input = prompt("enter your name");
+
+            foo("hi");
+            let x = bar("hhhh");
 
         </script>
     </head>
