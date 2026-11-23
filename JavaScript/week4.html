@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            // variable scope
+
+            // a local variable is declared inside of a function
+            // and cannot be used outside of the function
+            function foo(x){
+                const bar = 7;
+                console.log(x + bar);
+            }
+
+            // console.log(bar); // this will crash the program
+            // console.log(x); // parameters arre like local variables
+
+            // a global variable is declared outside of any function
+            // const name = prompt("Enter your name");
+
+            // function sayHello(){
+            //     alertr("Hello " + name)
+            // }
+            // sayHello();
+
+            // alert(prompt("Enter anything"));
+
+            // let input = prompt("Enter a number");
+            // // alert(typeof input);
+            // input = parseInt(input);
+            // // alert(typeof input)
+            // alert(input);
+
+            //alert(parseInt(prompt("Enter a number")));
+
+            function addNumbers(num1, num2){
+                let total = num1 + num2;
+                return total;
+            }
+
+            const sum = addNumbers(4,3);
+            console.log(sum);
+
+            console.log(addNumbers(5,5))
+
+            // Nested if statements
+            let input = prompt("Which way (L or R)");
+            if(input == "L"){
+                input = prompt("You run into a dragon, do you run or fight (R,F)");
+                if(input == "F"){
+                    alert("You win! Congrats")
+                }else{
+                    alert("The fire breath gets you")
+                }
+            }else{
+
+            }
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
